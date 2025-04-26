@@ -25,7 +25,7 @@ const CommonSubmitBtn = ({
       ) : (
         <button
           type={type}
-          onclink={onclick}
+          onClick={onclick}
           className={cn(
             "w-full rounded-[10px] text-white font-medium cursor-pointer text-center sm:p-3 p-2  flex justify-center items-center",
             className
