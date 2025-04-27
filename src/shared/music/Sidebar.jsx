@@ -46,6 +46,7 @@ const Sidebar = ({ className, setIsSidebarOpen, isSidebarOpen }) => {
             {navItems.map((item, index) => {
               return (
                 <NavLink
+                  onClick={() => setIsSidebarOpen(false)}
                   to={item.href}
                   key={index}
                   end={true}
@@ -74,6 +75,7 @@ const Sidebar = ({ className, setIsSidebarOpen, isSidebarOpen }) => {
                 <CommonSubmitBtn
                   link={true}
                   path="/hype-music/auth/signin"
+                  onClick={() => setIsSidebarOpen(false)}
                   className={
                     "w-36 rounded-lg border border-primary-color bg-transparent text-xl"
                   }
@@ -82,6 +84,7 @@ const Sidebar = ({ className, setIsSidebarOpen, isSidebarOpen }) => {
                 </CommonSubmitBtn>
                 <CommonSubmitBtn
                   link={true}
+                  onClick={() => setIsSidebarOpen(false)}
                   path="/hype-music/auth/register"
                   className={"w-36 rounded-lg text-xl"}
                 >
