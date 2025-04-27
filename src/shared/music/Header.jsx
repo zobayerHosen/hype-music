@@ -4,8 +4,9 @@ import { cn } from "@/lib/utils";
 import CommonSubmitBtn from "../../components/common/CommonSubmitBtn";
 import CartPopup from "../../components/music/shared/CartPopup";
 import { useAuth } from "../../hooks/useAuth";
+import { IoMenu } from "react-icons/io5";
 
-const Header = ({ className }) => {
+const Header = ({ handleSideBarOpen, className }) => {
   const { isAuthenticate } = useAuth();
 
   const navItems = [
@@ -82,6 +83,16 @@ const Header = ({ className }) => {
                 </CommonSubmitBtn>
               </>
             )}
+
+            {/* sidebar toggle button */}
+            <div className="xl:hidden w-full cursor-pointer flex justify-between items-center">
+              <button
+                onClick={handleSideBarOpen}
+                className="text-white cursor-pointer text-2xl"
+              >
+                <IoMenu className="text-4xl text-[#ED7340]" />
+              </button>
+            </div>
           </div>
         </div>
       </header>

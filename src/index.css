@@ -1,2 +1,10 @@
 @import "tailwindcss";
 @plugin "daisyui";
+
+.primary-color {
+  color: #ed7340;
+}
+/* Hide scrollbar in Firefox */
+.header-scrollbar::-webkit-scrollbar {
+  display: none;
+}
