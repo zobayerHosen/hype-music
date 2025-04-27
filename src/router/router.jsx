@@ -2,6 +2,9 @@ import { createBrowserRouter } from "react-router-dom";
 import Landing from "../pages/Landing";
 import MusicSiteLayout from "../layouts/MusicSiteLayout";
 import MusicHome from "../pages/Music/MusicHome";
+import ContactUs from "../pages/Music/ContactUs";
+import SignIn from "../pages/Music/auth/SignIn";
+import Register from "../pages/Music/auth/Register";
 
 const router = createBrowserRouter([
   {
@@ -17,6 +20,18 @@ const router = createBrowserRouter([
       {
         path: "",
         element: <MusicHome />,
+      },
+      {
+        path: "contact-us",
+        element: <ContactUs />,
+      },
+      {
+        path: "auth/signin",
+        element: <SignIn />,
+      },
+      {
+        path: "auth/register",
+        element: <Register />,
       },
     ],
   },
