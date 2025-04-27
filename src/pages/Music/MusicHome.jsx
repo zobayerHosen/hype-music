@@ -1,6 +1,7 @@
 import React from "react";
-import HeroBanner from "../../components/music/HeroBanner";
-import CommonWrapper from "../../components/common/CommonWrapper";
+import HeroBanner from "@/components/music/HeroBanner";
+import CommonWrapper from "@/components/common/CommonWrapper";
+import NewMusic from "@/components/music/NewMusic";
 
 const MusicHome = () => {
   return (
@@ -19,6 +20,8 @@ const MusicHome = () => {
               Search
             </div>
           </div>
+          {/* new music */}
+          <NewMusic />
         </div>
       </CommonWrapper>
     </div>
