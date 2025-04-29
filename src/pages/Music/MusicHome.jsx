@@ -3,6 +3,7 @@ import HeroBanner from "@/components/music/HeroBanner";
 import CommonWrapper from "@/components/common/CommonWrapper";
 import NewMusic from "@/components/music/NewMusic";
 import TrendingMusic from "@/components/music/TrendingMusic";
+import MusicYouMayLike from "../../components/music/MusicYouMayLike";
 
 const MusicHome = () => {
   return (
@@ -25,6 +26,8 @@ const MusicHome = () => {
           <NewMusic />
           {/* trending music */}
           <TrendingMusic />
+          {/* music you may like */}
+          <MusicYouMayLike />
         </div>
       </CommonWrapper>
     </div>
