@@ -4,6 +4,7 @@ import CommonWrapper from "@/components/common/CommonWrapper";
 import NewMusic from "@/components/music/NewMusic";
 import TrendingMusic from "@/components/music/TrendingMusic";
 import MusicYouMayLike from "../../components/music/MusicYouMayLike";
+import TopArtis from "../../components/music/TopArtis";
 
 const MusicHome = () => {
   return (
@@ -28,6 +29,8 @@ const MusicHome = () => {
           <TrendingMusic />
           {/* music you may like */}
           <MusicYouMayLike />
+          {/* top artist */}
+          <TopArtis />
         </div>
       </CommonWrapper>
     </div>

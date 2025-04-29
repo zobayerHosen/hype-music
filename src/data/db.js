@@ -5,6 +5,9 @@ import music_3 from "@/assets/images/music_3.png";
 import music_4 from "@/assets/images/music_4.png";
 import music_5 from "@/assets/images/music_5.png";
 import music_6 from "@/assets/images/music_6.png";
+import arijit from "@/assets/images/arijit.jpg";
+import ed_sharen from "@/assets/images/ed_sharen.jpg";
+import charlie_puth from "@/assets/images/charlie_puth.jpg";
 
 export const musicData = [
   {
@@ -91,5 +94,48 @@ export const musicData = [
     title: "Jeene Laga Hoon",
     artist: "Atif Aslam & Shreya Ghoshal",
     genre: "Romantic",
+  },
+];
+
+export const topArtistData = [
+  {
+    id: uuidv4(),
+    name: "Arijit Singh",
+    image: arijit,
+  },
+  {
+    id: uuidv4(),
+    name: "Ed Sharen",
+    image: ed_sharen,
+  },
+  {
+    id: uuidv4(),
+    name: "Charlie Puth",
+    image: charlie_puth,
+  },
+  {
+    id: uuidv4(),
+    name: "Arijit Singh",
+    image: arijit,
+  },
+  {
+    id: uuidv4(),
+    name: "Ed Sharen",
+    image: ed_sharen,
+  },
+  {
+    id: uuidv4(),
+    name: "Charlie Puth",
+    image: charlie_puth,
+  },
+  {
+    id: uuidv4(),
+    name: "Arijit Singh",
+    image: arijit,
+  },
+  {
+    id: uuidv4(),
+    name: "Arijit Singh",
+    image: arijit,
   },
 ];

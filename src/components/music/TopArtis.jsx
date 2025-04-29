@@ -1,19 +1,19 @@
-import { useRef, useState } from "react";
-import SectionTitle from "../common/SectionTitle";
-import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
-// import Swiper from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { musicData, topArtistData } from "../../data/db";
 import CommonMusicCard from "./shared/CommonMusicCard";
-import { musicData } from "@/data/db";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa6";
+import SectionTitle from "../common/SectionTitle";
+import { useRef, useState } from "react";
 import { Autoplay, Navigation } from "swiper/modules";
+import ArtisCards from "./shared/ArtisCards";
 
-const MusicYouMayLike = () => {
-  const swiperRef = useRef(null);
+const TopArtis = () => {
   const [activeIndex, setActiveIndex] = useState(0);
+  const swiperRef = useRef(null);
   return (
     <div className="w-full max-w-screen-2xl flex flex-col justify-start items-start gap-5">
       <div className="w-full flex justify-between gap-5 flex-wrap">
-        <SectionTitle text="You May Like It" />
+        <SectionTitle text="Top Artist" />
         {/* buttons */}
         <div className="flex primary-color gap-2 justify-start items-start">
           {/* previous */}
@@ -61,10 +61,10 @@ const MusicYouMayLike = () => {
           className="w-full"
         >
           {/* slides */}
-          {musicData.map((music) => {
+          {topArtistData.map((artist) => {
             return (
-              <SwiperSlide key={music.id}>
-                <CommonMusicCard musicInfo={music} />
+              <SwiperSlide key={artist.id}>
+                <ArtisCards artistInfo={artist} />
               </SwiperSlide>
             );
           })}
@@ -74,4 +74,4 @@ const MusicYouMayLike = () => {
   );
 };
 
-export default MusicYouMayLike;
+export default TopArtis;
