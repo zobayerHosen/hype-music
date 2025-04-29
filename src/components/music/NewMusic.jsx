@@ -11,7 +11,7 @@ const NewMusic = () => {
     }, []);
   };
   const musicRows = chunkArray(musicData, 2);
-  console.log(musicRows);
+  // console.log(musicRows);
 
   return (
     <div className="w-full flex flex-col justify-start items-center lg:gap-10 gap-5">
