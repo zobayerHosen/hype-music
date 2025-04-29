@@ -5,6 +5,7 @@ import NewMusic from "@/components/music/NewMusic";
 import TrendingMusic from "@/components/music/TrendingMusic";
 import MusicYouMayLike from "../../components/music/MusicYouMayLike";
 import TopArtis from "../../components/music/TopArtis";
+import Albums from "../../components/music/Albums";
 
 const MusicHome = () => {
   return (
@@ -31,6 +32,8 @@ const MusicHome = () => {
           <MusicYouMayLike />
           {/* top artist */}
           <TopArtis />
+          {/* albums */}
+          <Albums />
         </div>
       </CommonWrapper>
     </div>

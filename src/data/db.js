@@ -139,3 +139,31 @@ export const topArtistData = [
     image: arijit,
   },
 ];
+
+export const albums = [
+  {
+    id: uuidv4(),
+    title: "Hip Hop Song Album",
+    cover: music_1,
+  },
+  {
+    id: uuidv4(),
+    title: "Pop Song Album",
+    cover: music_4,
+  },
+  {
+    id: uuidv4(),
+    title: "Jazz Song Album",
+    cover: music_3,
+  },
+  {
+    id: uuidv4(),
+    title: "Country Song Album",
+    cover: music_2,
+  },
+  {
+    id: uuidv4(),
+    title: "Hip Hop Song Album",
+    cover: music_5,
+  },
+];

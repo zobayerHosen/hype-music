@@ -48,7 +48,7 @@ const TopArtis = () => {
           spaceBetween={20}
           navigation={false}
           autoplay={{
-            delay: 4000,
+            delay: 3000,
             disableOnInteraction: false,
           }}
           breakpoints={{
