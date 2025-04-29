@@ -5,6 +5,7 @@ import MusicHome from "../pages/Music/MusicHome";
 import ContactUs from "../pages/Music/ContactUs";
 import SignIn from "../pages/Music/auth/SignIn";
 import Register from "../pages/Music/auth/Register";
+import MusicDetails from "../pages/Music/MusicDetails";
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
       {
         path: "contact-us",
         element: <ContactUs />,
+      },
+      {
+        path: "music-details/:id",
+        element: <MusicDetails />,
       },
       {
         path: "auth/signin",

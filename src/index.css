@@ -5,6 +5,9 @@
 .primary-color {
   color: #ed7340;
 }
+.bg-color {
+  background-color: #ed7340;
+}
 /* Hide scrollbar in Firefox */
 .header-scrollbar::-webkit-scrollbar {
   display: none;

@@ -2,6 +2,7 @@ import React from "react";
 import HeroBanner from "@/components/music/HeroBanner";
 import CommonWrapper from "@/components/common/CommonWrapper";
 import NewMusic from "@/components/music/NewMusic";
+import TrendingMusic from "@/components/music/TrendingMusic";
 
 const MusicHome = () => {
   return (
@@ -22,6 +23,8 @@ const MusicHome = () => {
           </div>
           {/* new music */}
           <NewMusic />
+          {/* trending music */}
+          <TrendingMusic />
         </div>
       </CommonWrapper>
     </div>
