@@ -6,12 +6,13 @@ import TrendingMusic from "@/components/music/TrendingMusic";
 import MusicYouMayLike from "../../components/music/MusicYouMayLike";
 import TopArtis from "../../components/music/TopArtis";
 import Albums from "../../components/music/Albums";
+import Sponsor from "../../components/music/Sponsor";
 
 const MusicHome = () => {
   return (
     <div className="w-ful px-3 md:px-0">
       <HeroBanner />
-      <CommonWrapper className="bg-neutral-900">
+      <CommonWrapper className="bg-[#1F2730]">
         <div className="container mx-auto flex flex-col justify-start items-center 2xl:gap-24 xl:gap-20 md:gap-16 sm:gap-12 xs:gap-8 gap-5">
           {/* search */}
           <div className="w-full text-white md:h-[75px] sm:h-16 h-14 rounded-[10px]  shadow-input flex bg-[rgba(255,255,255,0.06)]">
@@ -34,6 +35,8 @@ const MusicHome = () => {
           <TopArtis />
           {/* albums */}
           <Albums />
+          {/* sponsor */}
+          <Sponsor />
         </div>
       </CommonWrapper>
     </div>
