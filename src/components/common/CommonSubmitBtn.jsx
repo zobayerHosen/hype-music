@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { cn } from "../../lib/utils";
+import Loader from "./Loader";
 
 const CommonSubmitBtn = ({
   children,
@@ -32,7 +33,7 @@ const CommonSubmitBtn = ({
             className
           )}
         >
-          {isLoading ? <h1>Loading</h1> : children}
+          {isLoading ? <Loader size={28} color="white" speed={1} /> : children}
         </button>
       )}
     </>
